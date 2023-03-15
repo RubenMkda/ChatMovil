@@ -1,0 +1,43 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100vw;
+  --main-text-color: rgba(14, 255, 14, 0.829);
+}
+
+.form-container{
+  background-color: #171717;
+  height: 100vh;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper{
+  display: flex;
+  background-color: #292929;
+  padding: 1em 3em;
+  border-radius: 10q;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.logo{
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.title{
+  color: var(--main-text-color);
+  font-size: 1em;
+}
+
+.imgAvatar{
+  width: 2em;
+  height: 2em;
+}
