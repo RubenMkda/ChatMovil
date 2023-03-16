@@ -1,4 +1,4 @@
-import avatar from '../assets/avatar-default.png'
+import avatar from '../assets/Img.svg'
 
 const Register = () => {
     return(

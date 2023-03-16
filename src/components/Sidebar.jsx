@@ -1,3 +1,4 @@
+import Chats from "./Chats"
 import NavBar from "./NavBar"
 import Search from "./Search"
 
@@ -6,6 +7,7 @@ const Sidebar = () =>{
         <div className="sidebar">
             <NavBar />
             <Search />
+            <Chats />
         </div>
     )
 }

@@ -5,6 +5,8 @@
   --main-text-color: rgba(14, 255, 14, 0.829);
   --main-bg-color: #292929;
   --main-bg2-color: rgb(12, 12, 12);
+  --main-bg3-color: rgb(2, 2, 2);
+  --main-placeholder-color:  rgba(240, 248, 255, 0.692);
 }
 
 .form-container{
@@ -55,7 +57,7 @@
 .container{
   border: 0.1em solid whitesmoke;
   border-radius: 1em;
-  width: 65%;
+  width: 75%;
   height: 80%;
   display: flex;
   overflow: hidden;
@@ -71,11 +73,18 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  background-color: black;
+  background-color: var(--main-bg3-color);
   height: 3em;
   padding: 1em;
   justify-content: space-between;
   color: whitesmoke;
+}
+
+.icon{
+  height: 2.2em;
+  width: 2.2em;
+  object-fit: cover;
+  border-radius: 25q;
 }
 
 .user{
@@ -88,6 +97,11 @@
 
 .logout{
   border-radius: 25q;
+}
+
+.logout:hover{
+  background-color: rgba(16, 190, 16, 0.829);
+  transition: all ease 0.2s;
 }
 
 .search{
@@ -117,9 +131,93 @@
 }
 
 .userchat:hover{
-  background-color: #070707;
+  background-color: #1a1a1a;
+}
+
+.iconfriend{
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.userchatinfo span{
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.userchatinfo p{
+  font-size: 0.8em;
+  color: var(--main-placeholder-color);
+  margin: 0 0 0 .4em;
 }
 
 .chat{
   flex: 2;
+}
+
+.chatinfo{
+  height: 2em;
+  background-color: var(--main-bg3-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  color: azure;
+}
+
+.chaticons{
+  display: flex;
+  gap: .3em;
+}
+
+.iconadds{
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 0;
+}
+
+.messages{
+  color: azure;
+  padding: 1em;
+  height: calc(100% - 8.5em);
+  overflow-y: scroll;
+}
+
+.sendmessage{
+  background-color: var(--main-bg3-color);
+  height: 2.5em;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sendmessage input{
+  width: 100%;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  background-color: var(--main-bg-color);
+  outline: none;
+  font-size: 1em;
+}
+
+.send{
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  gap: 1em;
+}
+
+.send img{
+  background-color: transparent;
+  border-radius: 0;
+  height: 1.7em;
+  width: 1.7em;
+}
+
+.send button{
+  border-radius: 0.3em;
+  padding: 1em 1.5em;
+  font-weight: bold;
+  font-size: .8em;
 }

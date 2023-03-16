@@ -72,14 +72,6 @@ h1 {
   line-height: 1.1;
 }
 
-img{
-  background-color: whitesmoke;
-  height: 2em;
-  width: 2em;
-  border-radius: 50q;
-  object-fit: cover;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
