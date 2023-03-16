@@ -1,9 +1,10 @@
 #root {
   margin: 0;
   padding: 0;
-  text-align: center;
   width: 100vw;
   --main-text-color: rgba(14, 255, 14, 0.829);
+  --main-bg-color: #292929;
+  --main-bg2-color: rgb(12, 12, 12);
 }
 
 .form-container{
@@ -17,7 +18,7 @@
 
 .form-wrapper{
   display: flex;
-  background-color: #292929;
+  background-color: var(--main-bg-color);
   padding: 1em 3em;
   border-radius: 10q;
   flex-direction: column;
@@ -29,7 +30,7 @@
 .logo{
   color: var(--main-text-color);
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 1.1em;
 }
 
 .title{
@@ -40,4 +41,85 @@
 .imgAvatar{
   width: 2em;
   height: 2em;
+}
+
+.home{
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  border: 0.1em solid whitesmoke;
+  border-radius: 1em;
+  width: 65%;
+  height: 80%;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar{
+  flex: 1;
+  border-right: 0.1em solid var(--main-text-color);
+  background-color: var(--main-bg2-color);
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: black;
+  height: 3em;
+  padding: 1em;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+.user{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  gap: 0.3em;
+}
+
+.logout{
+  border-radius: 25q;
+}
+
+.search{
+  border-bottom: 0.1em solid gray;
+}
+
+.searchform{
+  background-color: #313131;
+  padding: 0.1em;
+  border-radius: 15q;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
+.inputsearch{
+  border: none;
+  outline: none;
+  height: 1em;
+  padding: 1em;
+}
+
+.userchat{
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.userchat:hover{
+  background-color: #070707;
+}
+
+.chat{
+  flex: 2;
 }

@@ -52,6 +52,7 @@ button{
   border: none;
   padding: 1em;
   border-radius: 1.25em;
+  font-size: 0.7em;
 }
 
 p{
@@ -69,6 +70,14 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+img{
+  background-color: whitesmoke;
+  height: 2em;
+  width: 2em;
+  border-radius: 50q;
+  object-fit: cover;
 }
 
 @media (prefers-color-scheme: light) {
