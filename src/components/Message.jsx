@@ -7,6 +7,7 @@ const Message = () => {
             </div>
             <div className="messagecontent">
                 <p>Hello</p>
+                {/*<img src="https://i.blogs.es/755972/berserk-manga-2/840_560.jpeg" alt="" />*/}
             </div>
         </div>
     )
