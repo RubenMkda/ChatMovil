@@ -6,6 +6,7 @@
   --main-bg-color: #292929;
   --main-bg2-color: rgb(12, 12, 12);
   --main-bg3-color: rgb(2, 2, 2);
+  --main-scroll-hover: #26d374;
   --main-placeholder-color:  rgba(240, 248, 255, 0.692);
 }
 
@@ -183,36 +184,32 @@
 }
 
 .messages::-webkit-scrollbar{
-  width: 8px;
-  height: 8px;
+  width: 0.5em;
+  height:  0.5em;
 }
 
 .messages::-webkit-scrollbar-thumb {
-    background: #ccc;
+    background: var(--main-text-color);
     border-radius: 4px;
 }
 
 .messages::-webkit-scrollbar-thumb:hover {
-    background: #b3b3b3;
+    background: var(--main-scroll-hover);
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .messages::-webkit-scrollbar-thumb:active {
-    background-color: #999999;
+    background-color: var(--main-scroll-hover);
 }
 
 .messages::-webkit-scrollbar-track {
-    background: #e1e1e1;
-    border-radius: 4px;
-}
-
-.messages::-webkit-scrollbar-track:hover,
-.messages::-webkit-scrollbar-track:active {
-  background: #d4d4d4;
+    background: black;
 }
 
 .message{
   display: flex;
+  gap: 1.3em;
+  margin-bottom: 1.3em;
 }
 
 .messageinfo{
@@ -227,10 +224,37 @@
   font-size: 0.9em; 
 }
 
+.messagecontent{
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+}
+
 .messagecontent img{
   max-width: 30em;
   max-height: 30em;
   object-fit: cover;
+}
+
+.messagecontent p{
+  background-color: azure;
+  color: black;
+  padding: 0.4em;
+  border-radius: 0 .49em .49em .49em;
+}
+
+.owner{
+  flex-direction: row-reverse;
+}
+
+.owner .messagecontent p{
+  background-color: #26d374;
+  max-width: max-content;
+}
+
+.owner .messagecontent{
+  align-items: flex-end;
 }
 
 .sendmessage{
