@@ -59,6 +59,10 @@ p{
   margin-top: 0.5em;
 }
 
+a{
+  color: #0cc40c;
+}
+
 body {
   margin: 0;
   display: flex;

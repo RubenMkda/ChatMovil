@@ -41,6 +41,14 @@
   font-size: 1em;
 }
 
+.btnChat{
+  font-size: 1.2em;
+  font-weight: bolder;
+}.btnChat:hover{
+  background-color: #26d374;
+  transition: .3s;
+}
+
 .imgAvatar{
   width: 2em;
   height: 2em;
