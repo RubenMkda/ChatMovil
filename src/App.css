@@ -68,11 +68,11 @@
   flex: 1;
   border-right: 0.1em solid var(--main-text-color);
   background-color: var(--main-bg2-color);
+  position: relative;
 }
 
 .navbar{
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   background-color: var(--main-bg3-color);
   height: 3em;
@@ -232,8 +232,8 @@
 }
 
 .messagecontent img{
-  max-width: 30em;
-  max-height: 30em;
+  max-width: 10em;
+  max-height: 10em;
   object-fit: cover;
 }
 
@@ -295,4 +295,25 @@
   padding: 1em 1.5em;
   font-weight: bold;
   font-size: .8em;
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+@media screen and (max-width: 768px){
+  .logo{
+    display: none;
+  }
+  .container{
+    width: 90%;
+  }
+  .logout{
+    position: absolute;
+    bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 1200px){
+
 }
